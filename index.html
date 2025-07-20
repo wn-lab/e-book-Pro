@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>e-Book Pro</title>
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="logo-area">
+            <!--<div class="back-button" id="backButton">
+                <a href="#" aria-label="Kembali ke halaman sebelumnya">
+                    <i class="fas fa-arrow-left"></i>
+                </a>
+            </div>-->
+            <img src="berandajpg/logo ebook.png" alt="Logo e-Book" class="logo-img" loading="lazy">
+            <h1>_book</h1>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu navigasi" aria-expanded="false">
+            <div class="hamburger-icon" aria-hidden="true">
+                <span class="line top"></span>
+                <span class="line middle"></span>
+                <span class="line bottom"></span>
+            </div>
+        </button>
+        <div class="nav-menu" id="navMenu">
+            <a href="#" data-section="home" class="nav-link active">
+                <i class="fas fa-home"></i> Home
+            </a>
+            <a href="#" data-section="features" class="nav-link">
+                <i class="fas fa-star"></i> Features
+            </a>
+            <a href="#" data-section="about" class="nav-link">
+                <i class="fas fa-info-circle"></i> Tentang
+            </a>
+            <a href="#" data-section="contact" class="nav-link">
+                <i class="fas fa-phone-alt"></i> Kontak
+            </a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="content-section active">
+            <div class="hero">
+                <div class="hero-box">
+                    <h1 class="welcome-title">Transformasi Buku Tamu Modern</h1>
+                    <p class="welcome-desc">Ubah pengalaman acara Anda dengan sistem buku tamu elektronik cepat dan aman
+                        dari e_book. Aplikasi berbasis Cloud, memastikan kemudahan penggunaan dan keamanan data untuk
+                        semua pengguna.</p>
+                    <div class="action-buttons">
+                        <button class="btn btn-primary" id="openLoginBtn">
+                            <i class="fas fa-user-tie"></i> Owner
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h3 class="footer-title">Tentang Kami</h3>
+                        <p class="footer-text">Kami bergerak di bidang teknologi dan inovasi</p>
+                        <div class="social-media">
+                            <a href="https://facebook.com/eBukuTamu" class="social-link" aria-label="Facebook"><i
+                                    class="fab fa-facebook"></i></a>
+                            <a href="https://instagram.com/eBukuTamu" class="social-link" aria-label="Instagram"><i
+                                    class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com/company/eBukuTamu" class="social-link"
+                                aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h3 class="footer-title">Kontak Resmi</h3>
+                        <address class="footer-address">
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:ai.deep9077@gmail.com">Hallo @
+                                    Pengembang</a></p>
+                            <p><i class="fas fa-phone-alt"></i> <a href="tel:+6285158838350">Call to Admin</a></p>
+                            <p><i class="fas fa-map-marker-alt"></i> <a
+                                    href="https://www.google.com/maps?q=-7.996981,111.579455" target="_blank">Lokasi
+                                    Aktual</a>
+                            </p>
+                        </address>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p class="copyright">&copy; Copyright 2025 <strong>e-book</strong>. Seluruh hak dilindungi.</p>
+                    <p class="developer-credit">Dikembangkan <i class="fas fa-heart"></i> oleh: Wn.lab
+                        Studio. Versi
+                        1.1.0 (BETA)</p>
+                </div>
+            </footer>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="content-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h1 class="welcome-title">Fitur Unggulan</h1>
+                    <p class="welcome-desc">Temukan berbagai fitur canggih yang dirancang khusus untuk kebutuhan Event
+                        Anda</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <h3 class="feature-title">Realtime Tracking</h3>
+                        <p>Pantau kedatangan tamu secara realtime</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-qrcode"></i></div>
+                        <h3 class="feature-title">Check-in QR Code</h3>
+                        <p>Proses check-in cepat dengan scan QR code dari undangan digital</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                        <h3 class="feature-title">Chatbot WA</h3>
+                        <p>Respon otomatis dan konfirmasi kehadiran via WhatsApp</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <h3 class="feature-title">Cloud Sync</h3>
+                        <p>Data tersimpan aman di cloud dan bisa diakses dari mana saja</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+                        <h3 class="feature-title">Responsive</h3>
+                        <p>Tampilan optimal di semua perangkat: desktop, tablet, dan mobile</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h1 class="welcome-title">Tentang e_book</h1>
+                    <p class="welcome-desc">Platform Inovatif untuk Pengelolaan Event Digital</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-card">
+                            <div class="about-icon"><i class="fas fa-rocket"></i></div>
+                            <h3 class="about-title">Visi Kami</h3>
+                            <p>Mengubah cara tradisional menjadi pengalaman digital yang moden dan efisien</p>
+                        </div>
+                        <p>
+                            <strong>Buku Tamu Digital</strong> dengan user interface (UI) Yang modern dan Elegan kami
+                            telah meningkatkan efektivitas pengelolaan tamu di berbagai Event,
+                            menciptakan sistem pendaftaran yang lebih cepat dan akurat bagi pengguna, serta memberikan
+                            kepuasan kepada klien.
+                        </p>
+                        <p>
+                            Dengan Didukung teknologi AI, e_book mengelola data secara komprehensif dan akurat.
+                        </p>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="berandajpg/cca5ed3-10-mesin.jpg" alt="Tentang Kami">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <h1 class="welcome-title">Hubungi Kami</h1>
+                    <p class="welcome-desc">Tim kami siap membantu Anda, Segera hubungi kami</p>
+                </div>
+
+                <div class="contact-methods">
+                    <div class="contact-card whatsapp-card">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <h3 class="contact-title">WhatsApp</h3>
+                        <p>+62 851-5883-8350</p>
+                        <small>Respon cepat via chat</small>
+                    </div>
+
+                    <div class="contact-card email-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3 class="contact-title">Email</h3>
+                        <p>ai.deep9077@gmail.com</p>
+                        <small>Klik untuk kirim email</small>
+                    </div>
+
+                    <div class="contact-card phone-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h3 class="contact-title">Telepon</h3>
+                        <p>+62-851-5883-8350</p>
+                        <small>Klik untuk telp langsung</small>
+                    </div>
+
+                    <div class="contact-card map-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <h3 class="contact-title">Kantor</h3>
+                        <p>Jl. Ponorogo-Trenggalek Km 26</p>
+                        <small>Klik untuk lokasi aktual</small>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Auth Modal -->
+        <div id="auth-modal" class="auth-modal">
+            <div class="auth-container">
+                <button class="auth-close" id="authClose">
+                    <i class="material-icons">close</i>
+                </button>
+
+                <!-- LOGIN -->
+                <div id="login-section" class="auth-form-section active">
+                    <h2>Login Akun</h2>
+                    <form id="loginForm" autocomplete="on">
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" name="email" autocomplete="username"
+                                placeholder="Masukkan email Anda" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Password</label>
+                            <div class="password-box">
+                                <input type="password" id="login-password" name="password"
+                                    autocomplete="current-password" placeholder="Masukkan password" required />
+                                <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                    <i class="material-icons">visibility_off</i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-login">
+                            <span class="btn-text">Masuk</span>
+                        </button>
+
+                        <div id="login-loading" class="loading-message">
+                            <div class="spinner"></div>
+                            <span>Memverifikasi...</span>
+                        </div>
+                        <div id="login-error-message" class="error-message"></div>
+                    </form>
+
+                    <!--<div class="auth-switch">
+                        Belum punya akun? <a href="#" id="showSignup">Daftar di sini</a>
+                    </div>-->
+                </div>
+
+                <!-- SIGNUP -->
+                <div id="signup-section" class="auth-form-section">
+                    <h2>Daftar Akun</h2>
+                    <form id="signupForm" autocomplete="on">
+                        <div class="form-group">
+                            <label for="signup-email">Email</label>
+                            <input type="email" id="signup-email" name="email" autocomplete="email"
+                                placeholder="Masukkan email Anda" required />
+                        </div>
+
+                        <div class="form-group">
+                            <label for="signup-password">Password</label>
+                            <div class="password-box">
+                                <input type="password" id="signup-password" name="password" autocomplete="new-password"
+                                    placeholder="Buat password" required />
+                                <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                    <i class="material-icons">visibility_off</i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-login">Daftar</button>
+
+                        <!-- Spinner loading untuk signup (awalnya tersembunyi) -->
+                        <div id="signup-loading" class="loading-message"
+                            style="display:none; align-items:center; gap:10px; margin-top:10px;">
+                            <div class="spinner"
+                                style="width:30px; height:30px; border:2px solid #5e5d5d; border-top-color:#333; border-radius:50%; animation: spin 1s linear infinite;">
+                            </div>
+                            <span>Mendaftarkan...</span>
+                        </div>
+
+                        <!--<div id="signup-message" class="form-message"></div>-->
+                    </form>
+
+                    <div class="auth-switch">
+                        Sudah punya akun? <a href="#" id="showLogin">Login di sini</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Content After Login -->
+        <section id="content-after-login" class="content-section content-after-login">
+            <div class="content-header">
+                <h2>Dashboard Data Tamu</h2>
+                <div class="btn-box">
+                    <button class="btn btn-refresh" id="refreshBtn">
+                        <i class="fas fa-sync-alt"></i> Refresh
+                    </button>
+                    <!--<button class="btn btn-logout" id="logoutBtn">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </button>-->
+                </div>
+            </div>
+            <div class="iframe-container">
+                <iframe
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSUGWNS1JvhcA4TJqVopytDFaTtWZ99Cm0EoH_lStrfxZYPnDX3yySgk2xE8HFWKXc0Zae1krhyEkkw/pubhtml"></iframe>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Spinner Overlay -->
+    <div id="spinner-overlay">
+        <div class="spinner"></div>
+    </div>
+
+
+
+
+    <div class="floating-buttons">
+        <a href="https://wa.me/6285158838350" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
