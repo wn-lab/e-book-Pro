@@ -426,7 +426,7 @@ p {
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, var(--tech-accent), transparent, var(--tech-accent-light));
+    background: var(--glass-bg);
     z-index: -1;
     border-radius: 17px;
 }
@@ -962,6 +962,103 @@ input:focus {
     /* Tampilkan saat aktif */
 }
 
+
+
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 992px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text,
+    .about-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 5%;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 80px;
+        right: -100%;
+        flex-direction: column;
+        background: var(--glass-bg);
+        backdrop-filter: blur(10px);
+        width: 70%;
+        height: calc(100vh - 80px);
+        padding: 2rem;
+        transition: var(--transition);
+        box-shadow: var(--tech-shadow);
+        border-left: 1px solid var(--glass-border);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+
+    .welcome-title {
+        font-size: 2.8rem;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .content-section,
+    .hero {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .auth-container {
+        padding: 1.5rem;
+    }
+
+    .floating-buttons {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
+
 /* ===== RESPONSIVE MEDIA QUERIES ===== */
 
 /* Extra small devices (phones, 360px and down) */
@@ -989,7 +1086,7 @@ input:focus {
 /* Small devices (phones, 576px and down) */
 @media only screen and (max-width: 576px) {
     .iframe-container {
-        padding-top: 135%;
+        padding-top: 100%;
         /* Rasio 1:1 untuk mobile */
         border-radius: 12px;
     }
