@@ -790,15 +790,21 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
+    margin-top: -35px;
+}
+
+.content-header h2 {
+    font-size: 1.2rem;
 }
 
 .iframe-container {
+    height: 75vh;
+    margin-top: -10px;
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
     /* 16:9 Aspect Ratio */
-    border-radius: 15px;
+    border-radius: 12px;
     border: 1px solid var(--glass-border);
     box-shadow: var(--tech-shadow);
 }
